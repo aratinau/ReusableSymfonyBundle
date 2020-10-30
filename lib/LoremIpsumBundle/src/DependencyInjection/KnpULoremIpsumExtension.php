@@ -16,4 +16,9 @@ class KnpULoremIpsumExtension extends Extension
         $loader->load('services.xml');
     }
 
+    public function getAlias()
+    {
+        return 'knpu_lorem_ipsum';
+    }
+
 }
