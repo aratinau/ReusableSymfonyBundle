@@ -12,6 +12,10 @@ Retourne :
   [1] KnpU\LoremIpsumBundle\KnpUIpsum
 ```
 
+Toute la config d'un bundle
+
+`bin/console config:dump framework`
+
 Well hi there! This repository holds the code and script
 for the [Creating a Reusable (& Amazing) Symfony Bundle](https://knpuniversity.com/screencast/symfony-bundle) course on KnpUniversity.
 

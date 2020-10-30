@@ -1,1 +1,2 @@
 knpu_lorem_ipsum: # configurer dans getAlias KnpULoremIpsumExtension
+    min_sunshine: 5
