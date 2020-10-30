@@ -1,5 +1,17 @@
 # Creating a Reusable (& Amazing) Symfony Bundle
 
+## Notes
+
+`php bin/console debug:container --show-private knpu`
+
+Retourne :
+
+```
+ Select one of the following services to display its information:
+  [0] knpu_lorem_ipsum.knpu_ipsum
+  [1] KnpU\LoremIpsumBundle\KnpUIpsum
+```
+
 Well hi there! This repository holds the code and script
 for the [Creating a Reusable (& Amazing) Symfony Bundle](https://knpuniversity.com/screencast/symfony-bundle) course on KnpUniversity.
 
