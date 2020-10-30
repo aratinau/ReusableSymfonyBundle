@@ -21,7 +21,7 @@ class KnpULoremIpsumExtension extends Extension
 
         $definition = $container->getDefinition('knpu_lorem_ipsum.knpu_ipsum');
         if (null !== $config['word_provider']) {
-            $definition->setArgument(0, new Reference($config['word_provider']));
+            // $definition->setArgument(0, new Reference($config['word_provider']));
             /*
              * Reference()
              * when we set the argument to $config['word_provider'],
@@ -29,8 +29,11 @@ class KnpULoremIpsumExtension extends Extension
              * To fix this in YAML, we would prefix the service id with
              * the @ symbol. In PHP, wrap the value in a new Reference() object.
              * This tells Symfony that we're referring to a service.
-             * 
+             *
              * */
+
+            $container->setAlias('knpu_lorem_ipsum.word_provider', $config['word_provider']);
+            // php bin/console debug:container --show-private knpu_lorem_ipsum.word_provider
         }
         $definition->setArgument(1, $config['unicorns_are_real']);
         $definition->setArgument(2, $config['min_sunshine']);
