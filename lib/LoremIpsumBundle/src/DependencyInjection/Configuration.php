@@ -21,8 +21,9 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-            ->booleanNode('unicorns_are_real')->defaultTrue()->info('Whether or not you believe in unicorns')->end()
-            ->integerNode('min_sunshine')->defaultValue(3)->info('How much do you like sunshine?')->end()
+                ->booleanNode('unicorns_are_real')->defaultTrue()->info('Whether or not you believe in unicorns')->end()
+                ->integerNode('min_sunshine')->defaultValue(3)->info('How much do you like sunshine?')->end()
+                ->scalarNode('word_provider')->defaultNull()->end()
             ->end()
         ;
         return $treeBuilder;
