@@ -16,6 +16,17 @@ Toute la config d'un bundle
 
 `bin/console config:dump framework`
 
+```
+ "repositories": [
+        {
+            "type": "path",
+            "url": "LoremIpsumBundle"
+        }
+    ]
+```
+
+`composer require knpuniversity/lorem-ipsum-bundle:*@dev`
+
 Well hi there! This repository holds the code and script
 for the [Creating a Reusable (& Amazing) Symfony Bundle](https://knpuniversity.com/screencast/symfony-bundle) course on KnpUniversity.
 
