@@ -6,7 +6,7 @@
         "ext-iconv": "*",
         "doctrine/annotations": "^1.8",
         "knplabs/knp-markdown-bundle": "^1.7",
-        "knpuniversity/lorem-ipsum-bundle": "^1.0",
+        "knpuniversity/lorem-ipsum-bundle": "dev-master",
         "nexylan/slack-bundle": "^2.0",
         "php-http/guzzle6-adapter": "^1.1",
         "sensio/framework-extra-bundle": "^5.1",
